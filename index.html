@@ -1,0 +1,2380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A3967">
+
+  <title>MK Barber Shop Dubai | Premium Men's Haircuts & Grooming</title>
+  <meta name="description" content="Discover MK Barber Shop in Dubai. Explore professional men's haircuts, fades, beard styling, shaving and grooming at Dar Al Wasl, Meyan Mall and Palm Jumeirah.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mkbarbershop.ae/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MK Barber Shop | Making You Look Good Is Our Heritage">
+  <meta property="og:description" content="Professional men's grooming, haircuts and barbering across three Dubai locations.">
+  <meta property="og:url" content="https://mkbarbershop.ae/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #0A3967;
+      --color-primary-dark: #062746;
+      --color-primary-light: #EAF1F7;
+      --color-secondary: #333333;
+      --color-secondary-dark: #202020;
+      --color-secondary-light: #F0F0F0;
+      --color-accent: #C69A58;
+      --color-heading: #172333;
+      --color-text: #333333;
+      --color-text-muted: #666666;
+      --color-background: #FFFFFF;
+      --color-background-alt: #F5F6F8;
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #EAF1F7;
+      --color-border: #E1E5EA;
+      --color-border-strong: #0A3967;
+      --color-interactive: #0A3967;
+      --color-interactive-hover: #062746;
+      --color-focus: #C69A58;
+
+      --font-heading: "Barlow Condensed", sans-serif;
+      --font-body: "DM Sans", sans-serif;
+
+      --container: 1300px;
+      --gutter: 24px;
+      --section-space: 110px;
+      --radius: 4px;
+      --ease: cubic-bezier(.2,.7,.2,1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-background);
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 2 * var(--gutter)));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--color-accent);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      color: var(--color-heading);
+      line-height: .98;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(56px, 7.5vw, 100px);
+      letter-spacing: -1.8px;
+    }
+
+    h2 {
+      font-size: clamp(43px, 5.2vw, 68px);
+      letter-spacing: -.7px;
+    }
+
+    h3 {
+      font-size: clamp(28px, 3vw, 36px);
+    }
+
+    p {
+      max-width: 650px;
+    }
+
+    .section-heading {
+      margin-bottom: 55px;
+    }
+
+    .section-heading h2 {
+      margin-top: 18px;
+      max-width: 750px;
+    }
+
+    .section-heading p {
+      margin-top: 22px;
+      color: var(--color-text-muted);
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      min-height: 56px;
+      padding: 14px 26px;
+      border: 1px solid transparent;
+      background: var(--color-primary);
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: .3s var(--ease);
+    }
+
+    .btn:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: var(--color-accent);
+      color: #202020;
+    }
+
+    .btn-gold:hover {
+      background: #D8B77D;
+      color: #202020;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,.7);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--color-primary);
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Announcement strip */
+
+    .top-strip {
+      background: var(--color-primary-dark);
+      color: white;
+      padding: 9px 15px;
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: .4px;
+    }
+
+    .top-strip strong {
+      color: var(--color-accent);
+    }
+
+    /* Navigation */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: white;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav {
+      min-height: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .logo-mark {
+      width: 53px;
+      height: 53px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    .logo-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .logo-copy strong {
+      font-family: var(--font-heading);
+      font-size: 27px;
+      color: var(--color-primary);
+      letter-spacing: .5px;
+    }
+
+    .logo-copy span {
+      margin-top: 5px;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      font-weight: 700;
+      color: var(--color-text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(16px, 2.5vw, 36px);
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 600;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid var(--color-border);
+      background: white;
+      cursor: pointer;
+      color: var(--color-primary);
+      font-size: 25px;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 690px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      isolation: isolate;
+      background: var(--color-primary-dark);
+      color: white;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg,
+          rgba(4,26,47,.97) 0%,
+          rgba(4,26,47,.88) 43%,
+          rgba(4,26,47,.25) 100%),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=2000&q=85")
+        center 45% / cover no-repeat;
+      transform: scale(1.03);
+      animation: heroZoom 12s ease-out both;
+    }
+
+    .hero::after {
+      content: "MK";
+      position: absolute;
+      z-index: -1;
+      right: -35px;
+      bottom: -140px;
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: clamp(300px, 48vw, 650px);
+      line-height: .8;
+      color: rgba(255,255,255,.035);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      padding-block: 115px;
+      max-width: 800px;
+      color: white;
+    }
+
+    .hero .eyebrow {
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      color: white;
+      max-width: 780px;
+    }
+
+    .hero h1 span {
+      color: var(--color-accent);
+      display: block;
+    }
+
+    .hero-description {
+      max-width: 580px;
+      margin-top: 27px;
+      color: rgba(255,255,255,.85);
+      font-size: 19px;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 38px;
+    }
+
+    .hero-note {
+      margin-top: 55px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      color: rgba(255,255,255,.75);
+      font-size: 15px;
+    }
+
+    .hero-note-line {
+      width: 48px;
+      height: 1px;
+      background: var(--color-accent);
+    }
+
+    .hero-note strong {
+      color: white;
+    }
+
+    /* Brand statement */
+
+    .heritage {
+      background: var(--color-primary);
+      color: white;
+      padding-block: 46px;
+    }
+
+    .heritage-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .heritage h2 {
+      max-width: 690px;
+      color: white;
+      font-size: clamp(32px, 4.2vw, 53px);
+    }
+
+    .heritage p {
+      max-width: 380px;
+      color: rgba(255,255,255,.75);
+      font-size: 16px;
+    }
+
+    /* Introduction */
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      align-items: center;
+      gap: 85px;
+    }
+
+    .intro-visual {
+      position: relative;
+      min-height: 530px;
+    }
+
+    .intro-visual img {
+      height: 530px;
+      object-position: center;
+    }
+
+    .visual-caption {
+      position: absolute;
+      bottom: 25px;
+      left: -25px;
+      max-width: 250px;
+      padding: 25px;
+      background: var(--color-accent);
+      color: #202020;
+    }
+
+    .visual-caption strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 36px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .visual-caption span {
+      display: block;
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .intro-copy h2 {
+      margin-top: 20px;
+    }
+
+    .intro-copy p {
+      margin-top: 24px;
+      color: var(--color-text-muted);
+      font-size: 18px;
+    }
+
+    .intro-copy .btn {
+      margin-top: 32px;
+    }
+
+    .intro-rule {
+      width: 70px;
+      height: 3px;
+      background: var(--color-accent);
+      margin-top: 28px;
+    }
+
+    /* Services */
+
+    .services {
+      background: var(--color-background-alt);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services::before {
+      content: "GROOMING";
+      position: absolute;
+      right: -30px;
+      top: 30px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: clamp(100px, 18vw, 230px);
+      color: rgba(10,57,103,.035);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .services-intro {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 35px;
+    }
+
+    .services-intro .section-heading {
+      margin-bottom: 0;
+    }
+
+    .services-intro > p {
+      max-width: 400px;
+      color: var(--color-text-muted);
+    }
+
+    .service-list {
+      position: relative;
+      z-index: 1;
+      margin-top: 70px;
+      border-top: 1px solid #D4DCE4;
+    }
+
+    .service-row {
+      display: grid;
+      grid-template-columns: 85px 1fr 1.1fr 35px;
+      align-items: center;
+      gap: 25px;
+      padding: 32px 0;
+      border-bottom: 1px solid #D4DCE4;
+      transition: padding .3s var(--ease);
+    }
+
+    .service-row:hover {
+      padding-inline: 12px;
+    }
+
+    .service-number {
+      color: var(--color-accent);
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .service-row h3 {
+      font-size: 34px;
+    }
+
+    .service-row p {
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    .service-arrow {
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--color-primary);
+      border-radius: 50%;
+      color: var(--color-primary);
+      transition: .3s;
+    }
+
+    .service-row:hover .service-arrow {
+      color: white;
+      background: var(--color-primary);
+    }
+
+    /* Service imagery */
+
+    .service-showcase {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 24px;
+      margin-top: 75px;
+    }
+
+    .showcase-image {
+      min-height: 390px;
+      position: relative;
+      overflow: hidden;
+      background: var(--color-primary-dark);
+    }
+
+    .showcase-image img {
+      height: 100%;
+      min-height: 390px;
+      transition: transform .7s var(--ease);
+    }
+
+    .showcase-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .showcase-overlay {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 55px 30px 28px;
+      background: linear-gradient(transparent, rgba(0,0,0,.8));
+      color: white;
+    }
+
+    .showcase-overlay h3 {
+      color: white;
+    }
+
+    .showcase-overlay p {
+      margin-top: 8px;
+      color: rgba(255,255,255,.85);
+      font-size: 16px;
+    }
+
+    /* Custom icons */
+
+    .icon-section {
+      background: white;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 45px;
+      row-gap: 55px;
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .custom-icon {
+      width: 68px;
+      height: 68px;
+      flex-shrink: 0;
+      color: var(--color-primary);
+      padding: 10px;
+      border-bottom: 2px solid var(--color-accent);
+      background: var(--color-primary-light);
+    }
+
+    .custom-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-item h3 {
+      font-size: 25px;
+      margin-bottom: 9px;
+    }
+
+    .icon-item p {
+      color: var(--color-text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Gallery */
+
+    .gallery {
+      background: var(--color-primary-dark);
+      color: white;
+      overflow: hidden;
+    }
+
+    .gallery h2 {
+      color: white;
+    }
+
+    .gallery .section-heading p {
+      color: rgba(255,255,255,.7);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr .85fr;
+      grid-template-rows: 235px 235px;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      position: relative;
+      background: #183C5A;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      transition: transform .7s var(--ease);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-label {
+      position: absolute;
+      left: 18px;
+      bottom: 17px;
+      color: white;
+      background: rgba(6,39,70,.85);
+      padding: 7px 13px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* Booking CTA */
+
+    .booking {
+      position: relative;
+      padding-block: 100px;
+      background:
+        linear-gradient(90deg, rgba(6,39,70,.96), rgba(10,57,103,.87)),
+        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1800&q=80")
+        center / cover;
+      color: white;
+      overflow: hidden;
+    }
+
+    .booking-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .booking h2 {
+      color: white;
+      max-width: 730px;
+      margin-top: 18px;
+    }
+
+    .booking p {
+      color: rgba(255,255,255,.8);
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .booking-actions {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    /* Locations */
+
+    .locations {
+      background: var(--color-background-alt);
+    }
+
+    .location-list {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .location {
+      display: grid;
+      grid-template-columns: 65px 1fr 1fr auto;
+      align-items: center;
+      gap: 25px;
+      padding: 32px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .location-index {
+      font-family: var(--font-heading);
+      font-size: 35px;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .location h3 {
+      font-size: 31px;
+    }
+
+    .location-address {
+      font-size: 16px;
+      color: var(--color-text-muted);
+    }
+
+    .location-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .location-actions a {
+      min-height: 45px;
+      padding: 9px 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
+      font-size: 15px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .location-actions a:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    /* About / philosophy */
+
+    .philosophy {
+      background: white;
+    }
+
+    .philosophy-inner {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 85px;
+      align-items: center;
+    }
+
+    .philosophy-visual {
+      position: relative;
+    }
+
+    .philosophy-visual img {
+      height: 510px;
+    }
+
+    .philosophy-stamp {
+      position: absolute;
+      right: -25px;
+      top: 35px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--color-accent);
+      color: #202020;
+      font-family: var(--font-heading);
+      text-align: center;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+      transform: rotate(9deg);
+    }
+
+    .philosophy-copy h2 {
+      margin-top: 18px;
+    }
+
+    .philosophy-copy p {
+      color: var(--color-text-muted);
+      margin-top: 24px;
+      font-size: 18px;
+    }
+
+    .philosophy-copy .btn {
+      margin-top: 30px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      background: var(--color-background-alt);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 90px;
+    }
+
+    .faq-intro h2 {
+      margin-top: 18px;
+    }
+
+    .faq-intro p {
+      margin-top: 20px;
+      color: var(--color-text-muted);
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-item summary {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 23px 0;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--color-heading);
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: "+";
+      font-size: 27px;
+      color: var(--color-accent);
+    }
+
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-item p {
+      padding: 0 35px 24px 0;
+      color: var(--color-text-muted);
+      font-size: 16px;
+    }
+
+    /* Footer */
+
+    .footer {
+      background: #071E34;
+      color: white;
+      padding-top: 75px;
+      padding-bottom: 100px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .8fr .9fr;
+      gap: 70px;
+    }
+
+    .footer .logo-copy strong {
+      color: white;
+    }
+
+    .footer .logo-mark {
+      color: white;
+      border-color: var(--color-accent);
+    }
+
+    .footer-brand p {
+      margin-top: 23px;
+      max-width: 380px;
+      color: rgba(255,255,255,.68);
+      font-size: 16px;
+    }
+
+    .footer h3 {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 23px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+    }
+
+    .footer-links a,
+    .footer-links li {
+      color: rgba(255,255,255,.72);
+      font-size: 16px;
+      transition: color .2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.15);
+      margin-top: 65px;
+      padding-top: 23px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255,255,255,.6);
+      font-size: 15px;
+    }
+
+    .footer-bottom a {
+      color: var(--color-accent);
+    }
+
+    /* Mobile CTA */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Reveal effects */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes heroZoom {
+      from { transform: scale(1.1); }
+      to { transform: scale(1.03); }
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1050px) {
+      :root {
+        --section-space: 85px;
+      }
+
+      .nav-links {
+        gap: 17px;
+      }
+
+      .nav-links a {
+        font-size: 15px;
+      }
+
+      .nav-actions .btn {
+        padding-inline: 17px;
+      }
+
+      .intro-grid,
+      .philosophy-inner {
+        gap: 50px;
+      }
+
+      .location {
+        grid-template-columns: 45px 1fr 1fr;
+      }
+
+      .location-actions {
+        grid-column: 2 / -1;
+      }
+    }
+
+    @media (max-width: 800px) {
+      :root {
+        --section-space: 70px;
+        --gutter: 20px;
+      }
+
+      .nav {
+        min-height: 75px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions > .btn {
+        display: none;
+      }
+
+      .nav-links {
+        position: fixed;
+        inset: 0;
+        top: 75px;
+        height: calc(100dvh - 75px);
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 35px 25px;
+        gap: 0;
+        transform: translateX(100%);
+        transition: transform .35s var(--ease);
+        overflow-y: auto;
+      }
+
+      .nav-links.open {
+        transform: translateX(0);
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 18px 0;
+        font-size: 19px;
+      }
+
+      .hero {
+        min-height: 630px;
+      }
+
+      .hero-image {
+        background-position: 60% center;
+      }
+
+      .hero-content {
+        padding-block: 85px;
+      }
+
+      .heritage-inner,
+      .booking-inner,
+      .services-intro {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .intro-grid,
+      .philosophy-inner,
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .intro-visual {
+        min-height: 430px;
+      }
+
+      .intro-visual img {
+        height: 430px;
+      }
+
+      .visual-caption {
+        left: 12px;
+      }
+
+      .service-row {
+        grid-template-columns: 50px 1fr 30px;
+        gap: 15px;
+      }
+
+      .service-row p {
+        grid-column: 2;
+      }
+
+      .service-arrow {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      .service-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase-image {
+        min-height: 330px;
+      }
+
+      .showcase-image img {
+        min-height: 330px;
+      }
+
+      .icon-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 22px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 320px 200px 200px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+      }
+
+      .booking-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .location {
+        grid-template-columns: 45px 1fr;
+        gap: 10px 18px;
+      }
+
+      .location-address,
+      .location-actions {
+        grid-column: 2;
+      }
+
+      .location-actions {
+        flex-wrap: wrap;
+      }
+
+      .philosophy-stamp {
+        right: 10px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
+      }
+
+      .footer-brand {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 520px) {
+      :root {
+        --section-space: 58px;
+        --gutter: 17px;
+      }
+
+      body {
+        font-size: 16px;
+        padding-bottom: calc(78px + env(safe-area-inset-bottom));
+      }
+
+      .top-strip {
+        font-size: 15px;
+      }
+
+      .logo-mark {
+        width: 46px;
+        height: 46px;
+        font-size: 26px;
+      }
+
+      .logo-copy strong {
+        font-size: 24px;
+      }
+
+      .logo-copy span {
+        font-size: 10px;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero-image {
+        background-image:
+          linear-gradient(90deg,
+          rgba(4,26,47,.94),
+          rgba(4,26,47,.67)),
+          url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80");
+        background-position: 57% center;
+      }
+
+      .hero-content {
+        padding-block: 80px;
+      }
+
+      h1 {
+        font-size: clamp(51px, 13vw, 67px);
+      }
+
+      h2 {
+        font-size: clamp(40px, 11vw, 53px);
+      }
+
+      .hero-description {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-note {
+        margin-top: 36px;
+        font-size: 15px;
+      }
+
+      .heritage {
+        padding-block: 35px;
+      }
+
+      .heritage h2 {
+        font-size: 38px;
+      }
+
+      .intro-visual,
+      .intro-visual img {
+        height: 370px;
+        min-height: 370px;
+      }
+
+      .visual-caption {
+        bottom: 15px;
+        padding: 18px;
+      }
+
+      .service-row {
+        padding-block: 26px;
+      }
+
+      .service-row h3 {
+        font-size: 29px;
+      }
+
+      .service-row p {
+        font-size: 15px;
+      }
+
+      .icon-grid {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+      }
+
+      .icon-item {
+        gap: 17px;
+      }
+
+      .gallery-grid {
+        grid-template-rows: 290px 190px 190px;
+        gap: 10px;
+      }
+
+      .gallery-label {
+        font-size: 15px;
+        left: 10px;
+        bottom: 10px;
+      }
+
+      .booking {
+        padding-block: 70px;
+      }
+
+      .booking-actions {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .booking-actions .btn {
+        width: 100%;
+      }
+
+      .location {
+        padding-block: 25px;
+      }
+
+      .location h3 {
+        font-size: 27px;
+      }
+
+      .location-actions a {
+        font-size: 15px;
+      }
+
+      .philosophy-visual img {
+        height: 390px;
+      }
+
+      .philosophy-stamp {
+        width: 105px;
+        height: 105px;
+        font-size: 19px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .footer-brand {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        margin-top: 45px;
+      }
+
+      .mobile-cta {
+        position: fixed;
+        z-index: 1200;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 11px 13px calc(11px + env(safe-area-inset-bottom));
+        background: white;
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -5px 25px rgba(0,0,0,.1);
+      }
+
+      .mobile-cta .btn {
+        min-height: 52px;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .mobile-cta .btn:first-child {
+        background: white;
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+      }
+
+      .mobile-cta .btn:first-child:hover {
+        background: var(--color-primary-light);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "MK Barber Shop",
+    "url": "https://mkbarbershop.ae/",
+    "telephone": "+97143353223",
+    "email": "info@mkbarbershop.ae",
+    "description": "Professional men's haircuts, beard styling, shaving and grooming in Dubai.",
+    "foundingDate": "2016",
+    "areaServed": {
+      "@type": "City",
+      "name": "Dubai"
+    },
+    "sameAs": [
+      "https://www.fresha.com/providers/mk-barbershop-ao4vrjof"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- TOP STRIP -->
+
+  <div class="top-strip">
+    <strong>MK BARBER SHOP</strong> &nbsp;|&nbsp;
+    Making You Look Good Is Our Heritage
+  </div>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="container nav">
+
+      <a class="logo" href="#home" aria-label="MK Barber Shop home">
+        <div class="logo-mark">MK</div>
+        <div class="logo-copy">
+          <strong>MK BARBER</strong>
+          <span>SHOP · DUBAI</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Our Heritage</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn" href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true" target="_blank" rel="noopener">
+          Book Appointment
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="navLinks">
+          ☰
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+      <div class="hero-image" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content reveal">
+
+          <span class="eyebrow">The Art Of Modern Grooming</span>
+
+          <h1>
+            Look Sharp.
+            <span>Feel Different.</span>
+          </h1>
+
+          <p class="hero-description">
+            More than a haircut. Discover professional barbering,
+            precision styling and personalised grooming at
+            MK Barber Shop across Dubai.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold"
+              href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+              target="_blank" rel="noopener">
+              Book Your Appointment ↗
+            </a>
+
+            <a class="btn btn-outline" href="#services">
+              Explore Our Services
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="hero-note-line"></span>
+            <span><strong>Established 2016</strong> · Dubai, UAE</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HERITAGE STRIP -->
+
+    <section class="heritage">
+      <div class="container heritage-inner">
+        <h2>MAKING YOU LOOK GOOD IS IN OUR HERITAGE.</h2>
+        <p>
+          Professional grooming, individual style and a place
+          to enjoy a little time for yourself.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+
+    <section class="section" id="about">
+      <div class="container intro-grid">
+
+        <div class="intro-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85"
+            alt="Professional barber carefully styling a client's haircut"
+            loading="lazy">
+
+          <div class="visual-caption">
+            <strong>Since 2016</strong>
+            <span>A heritage built around grooming and style.</span>
+          </div>
+        </div>
+
+        <div class="intro-copy reveal">
+          <span class="eyebrow">Welcome To MK</span>
+
+          <h2>Where Your Style Gets Its Signature.</h2>
+
+          <div class="intro-rule"></div>
+
+          <p>
+            Established in 2016 on Al Wasl Street in Dubai,
+            MK Barber Shop was built around a simple idea:
+            helping every customer look and feel their best.
+          </p>
+
+          <p>
+            Our professional barbers combine international
+            barbering experience with an understanding of
+            Arabic styling to deliver grooming that reflects
+            your individual personality.
+          </p>
+
+          <p>
+            From precision haircuts and fades to beard styling
+            and facial treatments, discover a grooming experience
+            designed around you.
+          </p>
+
+          <a class="btn" href="https://mkbarbershop.ae/about/" target="_blank" rel="noopener">
+            Discover Our Story ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="section services" id="services">
+      <div class="container">
+
+        <div class="services-intro">
+          <div class="section-heading reveal">
+            <span class="eyebrow">The MK Experience</span>
+            <h2>Grooming, Refined.</h2>
+            <p>
+              Explore professional grooming services designed
+              to help you maintain your look and express your style.
+            </p>
+          </div>
+
+          <p class="reveal">
+            From everyday maintenance to a more complete grooming
+            session, find the services that suit your needs.
+            Availability may vary by branch.
+          </p>
+        </div>
+
+        <div class="service-list">
+
+          <a class="service-row reveal"
+            href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+            target="_blank" rel="noopener">
+            <span class="service-number">01</span>
+            <h3>Hair Cutting</h3>
+            <p>
+              Afro fades, clipper haircuts, hair trims,
+              hair washing and hair colouring.
+            </p>
+            <span class="service-arrow">↗</span>
+          </a>
+
+          <a class="service-row reveal"
+            href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+            target="_blank" rel="noopener">
+            <span class="service-number">02</span>
+            <h3>Beard & Shaving</h3>
+            <p>
+              Beard shaving and styling, signature shaving
+              and professional grooming.
+            </p>
+            <span class="service-arrow">↗</span>
+          </a>
+
+          <a class="service-row reveal"
+            href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+            target="_blank" rel="noopener">
+            <span class="service-number">03</span>
+            <h3>Hair Treatments</h3>
+            <p>
+              Hair relaxer and hair mask treatments
+              for your grooming routine.
+            </p>
+            <span class="service-arrow">↗</span>
+          </a>
+
+          <a class="service-row reveal"
+            href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+            target="_blank" rel="noopener">
+            <span class="service-number">04</span>
+            <h3>Facial Treatments</h3>
+            <p>
+              Express facials, face scrubs, black mask,
+              Hydra Facial and other facial services.
+            </p>
+            <span class="service-arrow">↗</span>
+          </a>
+
+        </div>
+
+        <div class="service-showcase">
+
+          <div class="showcase-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1100&q=85"
+              alt="Barber working on a modern men's hairstyle"
+              loading="lazy">
+
+            <div class="showcase-overlay">
+              <h3>Find Your Signature Cut.</h3>
+              <p>Professional haircutting and styling.</p>
+            </div>
+          </div>
+
+          <div class="showcase-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1000&q=85"
+              alt="Professional barber grooming and beard styling"
+              loading="lazy">
+
+            <div class="showcase-overlay">
+              <h3>Details Matter.</h3>
+              <p>Explore beard and shaving services.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:35px;text-align:center">
+          <a class="btn" href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true" target="_blank" rel="noopener">
+            Explore Services & Book ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SIX CUSTOM SVG ICONS -->
+
+    <section class="section icon-section">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">The MK Difference</span>
+          <h2>More Than A Haircut.</h2>
+          <p>
+            A considered approach to the details that make
+            your personal grooming experience.
+          </p>
+        </div>
+
+        <!-- Row 1: Three icons -->
+
+        <div class="icon-grid">
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M13 12h22v6H13z"/>
+                <path d="M17 18v18M31 18v18"/>
+                <path d="M13 36h22"/>
+                <path d="M17 24h14M17 29h14"/>
+                <path d="M20 7l4-3 4 3"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Precision Cuts</h3>
+              <p>Haircutting services tailored to your preferred style.</p>
+            </div>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M12 9l9 9"/>
+                <path d="M36 9l-9 9"/>
+                <path d="M21 18l-10 19"/>
+                <path d="M27 18l10 19"/>
+                <path d="M17 15l14 0"/>
+                <path d="M19 23h10"/>
+                <path d="M15 37h18"/>
+                <path d="M24 18v19"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Beard Styling</h3>
+              <p>Dedicated beard and shaving services for a considered finish.</p>
+            </div>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 5C18 14 11 21 11 29a13 13 0 0026 0c0-8-7-15-13-24z"/>
+                <path d="M18 30c0 4 3 7 7 7"/>
+                <path d="M32 12l3-3M35 17h5"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Facial Care</h3>
+              <p>Facial services and treatments for a refreshed appearance.</p>
+            </div>
+          </article>
+
+          <!-- Row 2: Three icons -->
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M11 13h26l-2 26H13z"/>
+                <path d="M18 13V9a6 6 0 0112 0v4"/>
+                <path d="M18 23c2 4 10 4 12 0"/>
+                <path d="M18 30h12"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Hair Treatments</h3>
+              <p>Hair masks and relaxer treatments among the available services.</p>
+            </div>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="18"/>
+                <circle cx="24" cy="24" r="12"/>
+                <path d="M24 13v11l8 5"/>
+                <path d="M9 9l4 4M39 9l-4 4"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Your Time</h3>
+              <p>Make time for a grooming appointment that fits your schedule.</p>
+            </div>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="custom-icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 5l5 12 13 1-10 9 3 14-11-7-11 7 3-14-10-9 13-1z"/>
+                <path d="M18 25l4 4 9-10"/>
+              </svg>
+            </div>
+            <div>
+              <h3>Personal Style</h3>
+              <p>Professional barbers with knowledge of international and Arabic styling.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">The Art Of Grooming</span>
+          <h2>Style Speaks For Itself.</h2>
+          <p>
+            Explore the craft of barbering through
+            haircuts, styling and grooming inspiration.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=85"
+              alt="Men's haircut in progress"
+              loading="lazy">
+            <span class="gallery-label">The Art Of The Cut</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=750&q=85"
+              alt="Professional barber styling hair"
+              loading="lazy">
+            <span class="gallery-label">Precision Styling</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=750&q=85"
+              alt="Men's beard grooming"
+              loading="lazy">
+            <span class="gallery-label">Beard Details</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=750&q=85"
+              alt="Modern barbershop interior"
+              loading="lazy">
+            <span class="gallery-label">The Barber Experience</span>
+          </div>
+
+          <div class="gallery-item reveal">
+            <img
+              src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=750&q=85"
+              alt="Barber tools and grooming equipment"
+              loading="lazy">
+            <span class="gallery-label">The Craft</span>
+          </div>
+
+        </div>
+
+        <div style="margin-top:35px">
+          <a class="btn btn-gold" href="https://mkbarbershop.ae/mk-barber/" target="_blank" rel="noopener">
+            Explore MK Gallery ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOOKING CTA -->
+
+    <section class="booking">
+      <div class="container booking-inner">
+
+        <div class="reveal">
+          <span class="eyebrow">Your Next Appointment</span>
+          <h2>Make Time For A Better You.</h2>
+          <p>
+            Ready for your next haircut or grooming session?
+            Choose MK Barber Shop and arrange your appointment.
+          </p>
+        </div>
+
+        <div class="booking-actions reveal">
+          <a class="btn btn-gold"
+            href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+            target="_blank" rel="noopener">
+            Book An Appointment ↗
+          </a>
+
+          <a class="btn btn-outline" href="tel:+97143353223">
+            Call MK Barber Shop
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+
+    <section class="section locations" id="locations">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">Find Your MK</span>
+          <h2>Three Locations. One Standard.</h2>
+          <p>
+            Discover the MK Barber Shop location
+            that works best for your next grooming appointment.
+          </p>
+        </div>
+
+        <div class="location-list">
+
+          <article class="location reveal">
+            <span class="location-index">01</span>
+
+            <h3>Dar Al Wasl</h3>
+
+            <p class="location-address">
+              Dar Wasl Mall, Al Wasl Road,
+              Jumeirah 2, Dubai, UAE.
+            </p>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=MK+Barbershop+Dar+Wasl+Mall+Dubai"
+                 target="_blank" rel="noopener">
+                Directions ↗
+              </a>
+              <a href="tel:+97143353223">Call</a>
+            </div>
+          </article>
+
+          <article class="location reveal">
+            <span class="location-index">02</span>
+
+            <h3>Meyan Mall</h3>
+
+            <p class="location-address">
+              Meyan Mall, 43 Al Thanya Street,
+              Umm Suqeim 2, Dubai, UAE.
+            </p>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=MK+Barbershop+Meyan+Mall+Dubai"
+                 target="_blank" rel="noopener">
+                Directions ↗
+              </a>
+              <a href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+                 target="_blank" rel="noopener">
+                Book
+              </a>
+            </div>
+          </article>
+
+          <article class="location reveal">
+            <span class="location-index">03</span>
+
+            <h3>Palm Jumeirah</h3>
+
+            <p class="location-address">
+              NH Collection Dubai The Palm,
+              Palm Jumeirah, Dubai, UAE.
+            </p>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=MK+Barbershop+NH+Collection+Dubai+The+Palm"
+                 target="_blank" rel="noopener">
+                Directions ↗
+              </a>
+              <a href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+                 target="_blank" rel="noopener">
+                Book
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top:32px">
+          <p style="font-size:15px;color:#666">
+            Please confirm individual branch service availability
+            and booking options through the booking platform.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+
+    <section class="section philosophy">
+      <div class="container philosophy-inner">
+
+        <div class="philosophy-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85"
+            alt="Contemporary barbershop setting"
+            loading="lazy">
+
+          <div class="philosophy-stamp">
+            MK<br>BARBER<br>SHOP
+          </div>
+        </div>
+
+        <div class="philosophy-copy reveal">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2>Your Style. Our Heritage.</h2>
+
+          <p>
+            At MK Barber Shop, grooming is about more than
+            appearance. It is about the confidence that comes
+            from finding a style that feels right for you.
+          </p>
+
+          <p>
+            Our approach brings together professional barbering,
+            personal attention and an understanding of different
+            styling preferences.
+          </p>
+
+          <p>
+            Whether you are visiting for a fresh haircut,
+            beard styling or a grooming treatment, our aim
+            is to make your visit worthwhile.
+          </p>
+
+          <a class="btn" href="https://mkbarbershop.ae/about/" target="_blank" rel="noopener">
+            More About MK ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="section faq">
+      <div class="container faq-layout">
+
+        <div class="faq-intro reveal">
+          <span class="eyebrow">Good To Know</span>
+          <h2>Before You Visit.</h2>
+          <p>
+            A few useful details to help you plan
+            your MK Barber Shop experience.
+          </p>
+        </div>
+
+        <div class="faq-list reveal">
+
+          <details class="faq-item">
+            <summary>Where can I find MK Barber Shop?</summary>
+            <p>
+              MK Barber Shop has three listed Dubai locations:
+              Dar Al Wasl Mall in Jumeirah 2, Meyan Mall in
+              Umm Suqeim 2 and NH Collection Dubai The Palm.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What grooming services are available?</summary>
+            <p>
+              Published services include haircuts, Afro fades,
+              beard shaving and styling, hair treatments and
+              facial treatments. Specific availability may vary
+              between locations.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How can I book an appointment?</summary>
+            <p>
+              You can use the official MK Barber Shop booking
+              platform on Fresha to explore available services
+              and appointment options.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I contact the shop directly?</summary>
+            <p>
+              Yes. You can call the published contact number
+              +971 4 335 3223 or use the official contact page
+              to reach the business.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does MK Barber Shop provide children's haircuts?</summary>
+            <p>
+              The official website also features a children's
+              haircut gallery. Contact the relevant branch
+              to confirm current availability.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONTACT -->
+
+    <section class="heritage" id="contact">
+      <div class="container heritage-inner">
+        <div>
+          <span class="eyebrow">Your MK Experience Awaits</span>
+          <h2 style="margin-top:18px">Ready For Your Next Look?</h2>
+        </div>
+
+        <a class="btn btn-gold"
+          href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+          target="_blank" rel="noopener">
+          Book Your Appointment ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="logo" href="#home">
+            <div class="logo-mark">MK</div>
+            <div class="logo-copy">
+              <strong>MK BARBER</strong>
+              <span>SHOP · DUBAI</span>
+            </div>
+          </a>
+
+          <p>
+            Making you look good is in our heritage.
+            Discover professional barbering and grooming
+            at MK Barber Shop across Dubai.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#about">Our Heritage</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#locations">Our Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Get In Touch</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+97143353223">+971 4 335 3223</a></li>
+            <li><a href="tel:+971568750008">+971 56 875 0008</a></li>
+            <li><a href="mailto:info@mkbarbershop.ae">info@mkbarbershop.ae</a></li>
+            <li><a href="https://mkbarbershop.ae/contact-us/" target="_blank" rel="noopener">Official Contact Page ↗</a></li>
+            <li><a href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true" target="_blank" rel="noopener">Book Online ↗</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> MK Barber Shop. All rights reserved.</span>
+        <a href="#home">Back to top ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- EXACTLY TWO MOBILE CTA BUTTONS -->
+
+  <div class="mobile-cta" aria-label="Quick booking actions">
+
+    <a class="btn" href="tel:+97143353223">
+      Call Now
+    </a>
+
+    <a class="btn btn-gold"
+      href="https://www.fresha.com/providers/mk-barbershop-ao4vrjof?allOffer=true"
+      target="_blank" rel="noopener">
+      Book Now ↗
+    </a>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+    (() => {
+      "use strict";
+
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+      const body = document.body;
+
+      // Mobile navigation
+
+      function closeMenu() {
+        navLinks.classList.remove("open");
+        body.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.textContent = "☰";
+      }
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+
+        body.classList.toggle("menu-open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation" : "Open navigation"
+        );
+
+        menuToggle.textContent = isOpen ? "×" : "☰";
+      });
+
+      navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 800) {
+          closeMenu();
+        }
+      });
+
+      // Dynamic copyright year
+
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+      // Scroll reveal
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        const observer = new IntersectionObserver(
+          (entries, currentObserver) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                currentObserver.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.12,
+            rootMargin: "0px 0px -35px 0px"
+          }
+        );
+
+        revealElements.forEach(element => {
+          observer.observe(element);
+        });
+      } else {
+        revealElements.forEach(element => {
+          element.classList.add("visible");
+        });
+      }
+
+      // Ensure anchor navigation closes the mobile menu
+
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener("click", event => {
+          const target = document.querySelector(
+            link.getAttribute("href")
+          );
+
+          if (target) {
+            closeMenu();
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
